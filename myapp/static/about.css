@@ -11,19 +11,21 @@
     height: 100vh;
 }
 .navbar{
-    width: 1200px;
-    height: 75px;
-    margin: auto;
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .icon{
     width: 200px;
     float: left;
     height: 70px;
+    margin-left: 40px;
 }
 
 .logo{
-    color: #ff7200;
+    color:whitesmoke;
     font-size: 35px;
     font-family: Arial;
     padding-top: 10px;
@@ -64,9 +66,9 @@ ul li a:hover{
 }
 
 .search{
-    width: 330px;
-    float: left;
-    margin-left: 270px;
+    width: 50%;
+    height: 100%;
+    margin-left: 200px;
 }
 
 .srch{
@@ -111,26 +113,27 @@ ul li a:hover{
 }
 
 .content{
-    width: 1200px;
-    height: auto;
-    margin: auto;
     color: #fff;
-    position: relative;
+    width: 100%;
+    height: 90%;
+    justify-items: normal;
 }
 
 .content .par{
     padding-left: 20px;
     padding-bottom: 25px;
     font-family: Arial;
-    letter-spacing: 1.2px;
-    line-height: 30px;
+    letter-spacing: 1px;
+    line-height:20px;
+    display:ruby-base;
+    height: 100%;
 }
 
 .content h1{
     font-family: 'Times New Roman';
-    font-size: 50px;
+    font-size: 35px;
     padding-left: 20px;
-    margin-top: 9%;
+    margin-left: 90px;
     letter-spacing: 2px;
 }
 
@@ -141,11 +144,14 @@ ul li a:hover{
     border: none;
     margin-top: 20px;
     margin-bottom: 10px;
-    margin-left: 20px;
+    margin-left: 2px;
     font-size: 18px;
     border-radius: 10px;
     cursor: pointer;
     transition: .4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 
@@ -157,6 +163,7 @@ ul li a:hover{
 
 .cn:hover{
     background-color: #fff;
+    color: #000;
 }
 
 .content span{
