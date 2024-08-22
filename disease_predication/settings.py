@@ -76,14 +76,14 @@ WSGI_APPLICATION = 'disease_predication.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.mysql',
-        # 'NAME': 'predictiondisease',
-        # 'USER': 'root',
-        # 'PASSWORD': 'Musk@n11',
-        # 'HOST': '',  # Set to empty string for localhost
-        # 'PORT': '3306',  # Set to empty string for default
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'mydatabase', # This is where you put the name of the db file. 
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'predictiondisease',
+        'USER': 'root',
+        'PASSWORD': 'Musk@n11',
+        'HOST': '',  # Set to empty string for localhost
+        'PORT': '3306',  # Set to empty string for default
+        # 'ENGINE': 'django.db.backends.sqlite3',
+        # 'NAME': 'mydatabase', # This is where you put the name of the db file. 
                  # If one doesn't exist, it will be created at migration time.
     }
 }
