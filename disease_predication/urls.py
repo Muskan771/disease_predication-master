@@ -23,6 +23,10 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('myapp.urls')),
    # path('login/', login, name='login'),
+    path('',views.home,name='home'),
+    path('about/', views.about, name='about'),
+    path('login/', views.login, name='login'),
+    path('service/',views.service, name='service')
    
 
 ]

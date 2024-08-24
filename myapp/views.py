@@ -15,6 +15,9 @@ def home(request):
 def about(request):
 	return render(request, 'myapp/about.html')
 
+def service(request):
+      return render(request, 'myapp/service.html')
+
 
 # Define a view function for the login page
 def login(request):
