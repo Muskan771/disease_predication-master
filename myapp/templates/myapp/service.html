@@ -2,34 +2,58 @@
 {% load static %}
 <html lang="en">
 <head>
-    <title>About</title>
-    <link rel="stylesheet" href="{% static 'about.css' %}">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'service.css' %}">
+    <title>Our Services</title>
+    <link rel="stylesheet" href="service.css">
 </head>
 <body>
-    {% comment %} <h1>our services</h1> {% endcomment %}
-    {% comment %} <a href="{% url 'home' %}">Back to Home</a><br> {% endcomment %}
-    {% comment %} <a href="{% url 'about' %}">Go to about</a> {% endcomment %}
+    <!-- Main Container -->
     <div class="main">
+        <!-- Navbar Section -->
         <div class="navbar">
             <div class="icon">
-                <h2 class="logo">DiseasePredication</h2>
+                <h2 class="logo">DiseasePrediction</h2>
             </div>
             <div class="menu">
-                <ul>
+                <ul id="list">
                     <li><a href="{% url 'home' %}">HOME</a></li>    
                     <li><a href="{% url 'about' %}">ABOUT</a></li>
-                    <li><a href="{% url 'service' %}">SERVICE</a></li> 
+                    <li><a href="{% url 'service' %}">SERVICE</a></li>
                 </ul>
             </div>
             <div class="search">
-                <input class="srch" type="search" name="" placeholder="Type To text">
-                <a href="#"> <button class="btn">Search</button></a>
+                <input class="srch" type="search" name="" placeholder="Type to search">
+                <a href="#"><button class="btn">Search</button></a>
             </div> 
+        </div>
+
+        <!-- Content Section -->
         <div class="content">
-            <h1>Welcome to Our Disease Prediction Services</h1>
-            <p>Our app offers a range of services to help you understand and manage your health better. From symptom checking to risk assessments, explore our tools to gain insights into your health and take proactive steps.</p>
-
-
+            <h1>Our Services</h1>
+            <div>
+                <ul>
+                    <li><strong>Disease Prediction</strong><br>
+                        Our primary service is accurate disease prediction using state-of-the-art machine learning algorithms. Simply input your symptoms, and our model will predict the likelihood of various diseases. We aim to provide early insights that empower you to take control of your health.
+                    </li> 
+                    <li><strong>Health Data Analysis</strong><br>
+                        We analyze your medical history and health data to provide personalized health reports. Our system identifies potential health risks and suggests preventive measures, ensuring that you stay informed about your well-being.
+                    </li>
+                    <li><strong>Real-time Symptom Checker</strong><br>
+                        Our real-time symptom checker offers instant health insights. By entering your symptoms, you’ll receive a list of possible conditions based on extensive medical databases and advanced machine learning models.
+                    </li>
+                    <li><strong>Healthcare Recommendations</strong><br>
+                        Based on your health analysis, we offer tailored healthcare recommendations. These include suggestions for medical tests, consultations with specialists, and lifestyle changes that can improve your overall health.
+                    </li>
+                    <li><strong>User-Friendly Interface</strong><br>
+                        Our app is designed with a clean, intuitive interface to ensure ease of use for all users. Whether you're tech-savvy or not, navigating our platform is simple and hassle-free.
+                    </li>
+                    <li><strong>Secure Data Management</strong><br>
+                        We prioritize your privacy and security. All health data you provide is stored securely and is used solely for disease prediction and analysis. Your personal information remains confidential, and we comply with all relevant healthcare data regulations.
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
