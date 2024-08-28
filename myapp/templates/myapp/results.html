@@ -1,0 +1,8 @@
+<h1>Possible Diseases</h1>
+<ul>
+    {% for disease in diseases %}
+        <li>{{ disease.name }}: {{ disease.description }}</li>
+    {% empty %}
+        <li>No diseases found.</li>
+    {% endfor %}
+</ul>

@@ -18,6 +18,8 @@ def about(request):
 def service(request):
       return render(request, 'myapp/service.html')
 
+def symp(request):
+      return render(request, 'myapp/symptom_checker.html')
 
 # Define a view function for the login page
 def login(request):
